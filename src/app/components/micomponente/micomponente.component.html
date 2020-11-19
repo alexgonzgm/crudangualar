@@ -1,0 +1,45 @@
+<h1>Todos los usuarios </h1>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuarios">
+                <td >{{usuario.id}}</td>
+                <td >{{usuario.email}}</td>
+                <td >{{usuario.first_name}}</td>
+                <td >{{usuario.last_name}}</td>
+               
+            </tr>
+            
+        </tbody>
+    </table>
+    <
+
+</div>
+
+<!-- <h1>Todos los usuarios </h1>
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+</div> -->

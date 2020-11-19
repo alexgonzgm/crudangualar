@@ -1,0 +1,28 @@
+<h2 class="mt-2">Nuestros departamentos</h2>
+<div *ngIf="departamentos" class="mt-4 card" >
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Numero</td>
+                <td>Nombre</td>
+                <td>Localidad</td>
+                <td></td>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let departamento of departamentos">
+            
+                <td>{{departamento.numero}}</td>
+                <td>{{departamento.nombre}}</td>
+                <td>{{departamento.localidad}}</td>
+                <td>
+                    <a [routerLink] ="['/eliminar',departamento.numero]"  class="btn btn-danger">Delete</a>
+                    <a [routerLink] ="['/update',departamento.numero]"  class="btn btn-info">Modificar</a>
+                </td>             
+            </tr>
+        </tbody>
+    </table>
+   
+    
+</div>
